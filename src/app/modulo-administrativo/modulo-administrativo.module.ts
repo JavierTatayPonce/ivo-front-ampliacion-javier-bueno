@@ -27,9 +27,9 @@ import { ConfirmacionCreacionPacienteComponent } from './componente-administrati
 import { ModuloElementosGeneralesModule } from '../modulo-elementos-generales/modulo-elementos-generales.module';
 import { ComponenteIncidenciasAdministrativoComponent } from './componente-administrativo/componente-incidencias-administrativo/componente-incidencias-administrativo.component';
 import { ComponenteTablaIncidenciasComponent } from './componente-administrativo/componente-incidencias-administrativo/componente-tabla-incidencias/componente-tabla-incidencias.component';
-import { ComponenteCrearIncidenciaAdministrativoComponent } from './componente-administrativo/componente-incidencias-administrativo/componente-crear-inci-admin/componente-crear-inci-admin.component';
-import { ComponenteResumenDatosIncidenciaAdministrativoComponent } from './componente-administrativo/componente-incidencias-administrativo/componente-resumen-inci-admin/componente-resumen-inci-admin.component';
-import { ComponenteConfirmacionIncidenciaAdministrativoComponent } from './componente-administrativo/componente-incidencias-administrativo/componente-confirmacion-incidencia-administrativo/componente-confirmacion-incidencia-administrativo.component';
+import { ComponenteCrearInciAdminComponent } from './componente-administrativo/componente-incidencias-administrativo/componente-crear-inci-admin/componente-crear-inci-admin.component';
+import { ComponenteResumenInciAdminComponent } from './componente-administrativo/componente-incidencias-administrativo/componente-resumen-inci-admin/componente-resumen-inci-admin.component';
+import { ComponenteConfirmacionAdminComponent } from './componente-administrativo/componente-incidencias-administrativo/componente-confirmacion-admin/componente-confirmacion-admin.component';
 import { ComponenteEditarIncidenciaAdminComponent } from './componente-administrativo/componente-incidencias-administrativo/componente-editar-incidencia-admin/componente-editar-incidencia-admin.component';
 import { ComponenteConfirmacionEditarAdminComponent } from './componente-administrativo/componente-incidencias-administrativo/componente-confirmacion-editar-admin/componente-confirmacion-editar-admin.component';
 @NgModule({
@@ -51,9 +51,9 @@ import { ComponenteConfirmacionEditarAdminComponent } from './componente-adminis
     ConfirmacionCreacionPacienteComponent,
     ComponenteIncidenciasAdministrativoComponent,
     ComponenteTablaIncidenciasComponent,
-    ComponenteCrearIncidenciaAdministrativoComponent,
-    ComponenteResumenDatosIncidenciaAdministrativoComponent,
-    ComponenteConfirmacionIncidenciaAdministrativoComponent,
+    ComponenteCrearInciAdminComponent,
+    ComponenteResumenInciAdminComponent,
+    ComponenteConfirmacionAdminComponent,
     ComponenteEditarIncidenciaAdminComponent,
     ComponenteConfirmacionEditarAdminComponent
   ],
