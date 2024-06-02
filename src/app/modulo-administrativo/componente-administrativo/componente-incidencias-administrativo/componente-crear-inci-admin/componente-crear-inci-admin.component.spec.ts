@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ComponenteCrearInciAdminComponent } from './componente-crear-inci-admin.component';
 
-describe('ComponenteCrearIncidenciaAdministrativoComponent', () => {
+describe('ComponenteCrearInciAdminComponent', () => {
   let component: ComponenteCrearInciAdminComponent;
   let fixture: ComponentFixture<ComponenteCrearInciAdminComponent>;
 
