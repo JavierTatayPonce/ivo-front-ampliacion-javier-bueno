@@ -1,0 +1,36 @@
+    <div class="contenedor">
+        <div class="row titulo col-md-12">
+            <div class="textoCabecera text-center col-md-12">
+                <h3>Resumen de los datos de la incidencia</h3>
+                <p>Resumen de la información introducida para la creación de la incidencia</p>
+            </div>
+        </div>
+    
+        <div class="cajaDatos d-flex flex-row col-md-12 p-4">
+            <div class="col-md-2"></div>
+            <div class="col-md-5 parteIzq d-flex flex-column p-2">
+                <p><strong>Asunto:</strong> {{ incidencia.asunto }}</p>
+                <p><strong>Prioridad:</strong> {{ incidencia.nivel_prioridad }}</p>
+                <p><strong>Nombre:</strong> {{ incidencia.nombre }}</p>
+                <p><strong>Fecha:</strong> {{ incidencia.fecha }}</p>
+                <p><strong>Puesto de Trabajo:</strong> {{ getNombrePuesto() }}</p>
+            </div>
+            <div class="cajaDerecha col-md-4 d-flex flex-column">
+                <div class="col-md-12 contenedorDescripcion mb-4 p-2">
+                    <p><strong>Descripción:</strong> {{ incidencia.descripcion }}</p>
+                </div>
+                <div class="col-md-12 contendorImagenesSubidas p-2">
+                    <p><strong>Archivos Subidos:</strong></p>
+                    <div *ngIf="imagenesSubidas.length > 0" class="uploaded-files">
+                        <ul>
+                            <li *ngFor="let file of imagenesSubidas">{{ file.name }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="boton d-flex justify-content-center align-items-center mt-4">
+            <button class="botonConfirmar" routerLink="{{siguienteRuta}}" (click)="redireccion()">Confirmar</button>
+        </div>
+    </div>

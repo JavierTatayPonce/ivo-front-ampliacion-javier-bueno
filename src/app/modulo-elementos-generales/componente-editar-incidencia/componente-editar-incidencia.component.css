@@ -1,0 +1,192 @@
+.contenedor{
+    width: 100%;
+    height: 80vh;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: -0.088px 2.398px 8.288px 0px rgba(0, 0, 0, 0.04),
+    -0.439px 11.992px 51px 0px rgba(0, 0, 0, 0.07);
+}
+
+.titulo{
+    padding-top: 40px;
+}
+
+
+.textoCabecera h3{
+    color: #3B82F6;
+}
+
+.textoCabecera p{
+    color: #9E9E9E;
+}
+
+#btnEnviar{
+    height: 40px;
+    width: 150px;
+    font-weight: bold;
+    background-color: #3B82F6;
+    border-radius: 10px;
+    line-height: 35px;
+    color: white;
+    border-color: #3b83f600;
+    margin-top: 10px;
+    margin-right: 70px;
+}
+
+.contendorDescripcion{
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: -0.088px 2.398px 8.288px 0px rgba(0, 0, 0, 0.04),
+    -0.439px 11.992px 51px 0px rgba(0, 0, 0, 0.07);
+    width: 95%;
+    height: 22vh;
+}
+
+.descripcionIncidencia{
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+}
+
+#descripcion{
+    width: 90%;  
+    border: 2px solid #D3D7D9;
+    border-radius: 6px;
+    margin-bottom: 50px;
+    transition: background-color 0.3s ease;
+}
+
+#descripcion:focus {
+    border-color: #3B82F6;
+    outline: none; 
+}
+
+.form-group label{
+    margin-left: 80px;
+}
+
+.form-group input,
+.form-group select {
+    margin-bottom: 40px;
+    display: flex;
+    padding-left: 60px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    width: 50%;
+    margin-left: 80px;
+    border: 2px solid #D3D7D9;
+    border-radius: 6px;
+}
+
+label{
+    color: #3B82F6;
+}
+
+.file-upload-form {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+  }
+  .file-upload-label input {
+    display: none;
+
+  }
+  .file-upload-label svg {
+    height: 50px;
+    fill: rgb(82, 82, 82);
+    margin-bottom: 20px;
+  }
+  .file-upload-label {
+    cursor: pointer;
+    padding: 30px 70px;
+    border-radius: 40px;
+    border: 2px dashed #D3D7D9;
+    width: 80%;
+  }
+  .file-upload-design {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  .browse-button {
+    background-color: rgb(82, 82, 82);
+    padding: 5px 15px;
+    border-radius: 10px;
+    color: white;
+    transition: all 0.3s;
+  }
+  .browse-button:hover {
+    background-color: rgb(14, 14, 14);
+  }
+  .uploaded-files {
+    margin-top: 20px;
+}
+.cajaImagenesSubidas{
+    width: 80%;
+    height: 25vh;
+    margin-top: 10px;
+    border: 2px solid #D3D7D9;
+    border-radius: 6px;
+    margin-right: 25px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: -0.088px 2.398px 8.288px 0px rgba(0, 0, 0, 0.04),
+    -0.439px 11.992px 51px 0px rgba(0, 0, 0, 0.07);
+}
+
+.uploaded-files ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.uploaded-files li {
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.imgSubirImagen{
+    width: 30px;
+    margin-left: 50px;
+}
+.textoSubir{
+    color: #0455BF;
+    margin-left: 10px;
+}
+
+.tituloImagenSubir{
+    margin-left: 120px;
+}
+
+#asunto{
+    background-image: url('../../../assets/images/ImagenesGenerales/lalala.svg');
+}
+
+#prioridad{
+    background-image: url('../../../assets/images/ImagenesGenerales/nivelPrioridad.svg');
+}
+
+#nombre{
+    background-image: url('../../../assets/images/ImagenesGenerales/nombreCompleto.svg');
+}
+
+#fecha{
+    background-image: url('../../../assets/images/ImagenesGenerales/fechaCalendario.svg');
+}
+
+#puesto{
+    background-image: url('../../../assets/images/ImagenesGenerales/maletin.svg');
+}
+
+
+
+  #btnEliminar{
+    background-color: red;
+    color: white;
+    border-radius: 3px;
+    border: none;
+}

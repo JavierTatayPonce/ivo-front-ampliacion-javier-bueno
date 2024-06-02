@@ -1,0 +1,24 @@
+
+#dataTable {
+    background-color: white;
+    text-align: center;
+  }
+  
+
+  #dataTable tbody tr {
+    background-color: white;
+    text-align: center;
+  }
+  
+
+  #dataTable thead th {
+    background-color: #E9E9E9;
+    text-align: center;
+    height: 4vh;
+  }
+
+  #dataTable tbody tr:hover {
+    background-color: blue !important;
+    color: white !important; 
+  }
+  

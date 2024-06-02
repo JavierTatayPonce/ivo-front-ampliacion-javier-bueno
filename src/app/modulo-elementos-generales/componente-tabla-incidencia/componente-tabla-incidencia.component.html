@@ -1,0 +1,47 @@
+<table id="dataTable" class="display" style="width:100%">
+    <thead>
+      <tr>
+        <th>Asunto</th>
+        <th>Nivel de prioridad</th>
+        <th>Estado</th>
+        <th>Fecha</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!--AQUI SE GENERAN LOS REGISTROS DE LA TABLA-->
+    </tbody>
+  </table>
+
+  <div class="modal fade" id="confirmDeleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Confirmar Eliminación</h5>
+        </div>
+        <div class="modal-body">
+          ¿Estás seguro de que deseas eliminar esta incidencia?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" (click)="cerrarModal()" data-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-danger" (click)="confirmarEliminacion()">Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="errorModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="errorModalLabel">Error</h5>
+        </div>
+        <div class="modal-body">
+          Solo se pueden eliminar incidencias con estado PENDIENTE.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" (click)="cerrarModal()" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
