@@ -10,24 +10,24 @@ export class IncidenciasService {
   constructor(private http: HttpClient) { }
 
   obtenerIncidenciasEmpleado(id: number): Observable<any> {
-    return this.http.get(`http://localhost/ivo_backend/public/api/incidencias/mostrarIncidenciasEmpleado/${id}`);
+    return this.http.get(`https://intraivo.online/public/api/incidencias/mostrarIncidenciasEmpleado/${id}`);
   }
 
   crearIncidencia(incidencia: any): Observable<any> {
-    return this.http.post('http://localhost/ivo_backend/public/api/incidencias/guardar', incidencia);
+    return this.http.post('https://intraivo.online/public/api/incidencias/guardar', incidencia);
   }
 
   editarIncidencia(incidencia: any): Observable<any>{
-    return this.http.put(`http://localhost/ivo_backend/public/api/incidencias/actualizar/${incidencia.id}`, incidencia);
+    return this.http.put(`https://intraivo.online/public/api/incidencias/actualizar/${incidencia.id}`, incidencia);
     
   }
 
   obtenerIncidenciaPorId(id: number): Observable<any> {
-    return this.http.get(`http://localhost/ivo_backend/public/api/incidencias/buscar/${id}`);
+    return this.http.get(`https://intraivo.online/public/api/incidencias/buscar/${id}`);
   }
 
   eliminarIncidencia(id: number): Observable<any>{
-    return this.http.delete(`http://localhost/ivo_backend/public/api/incidencias/borrar/${id}`);
+    return this.http.delete(`https://intraivo.online/public/api/incidencias/borrar/${id}`);
   }
 
 }
