@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class LogoutService {
   //private apiUrl = 'https://ivo-back.online/api';
-  private apiUrl = 'https://intraivo.online/public/api';
+  private apiUrl = 'https://intraivo.online/api';
   constructor(private http: HttpClient) {}
 
   logout(): Observable<any> {

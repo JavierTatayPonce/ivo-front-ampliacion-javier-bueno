@@ -12,14 +12,14 @@ export class UsuariosService {
 
   buscarPorDni(): Observable<any> {
     return this.http.get(
-     'https://intraivo.online/public/api/usuarios/buscarPorDni'
+     'https://intraivo.online/api/usuarios/buscarPorDni'
      //'https://ivo-back.online/api/usuarios/buscarPorDni'
     );
   }
 
   mostrarRadiologos(): Observable<any> {
     return this.http.get(
-      'https://intraivo.online/public/api/usuarios/mostrarRadiologos'
+      'https://intraivo.online/api/usuarios/mostrarRadiologos'
       //'https://ivo-back.online/api/usuarios/mostrarRadiologos'
     );
   }
@@ -27,7 +27,7 @@ export class UsuariosService {
   crearUsuarioPaciente(datos: any): Observable<any> {
     // Ajusta la URL según tu configuración
     return this.http.post(
-      'https://intraivo.online/public/api/usuarios/crearUsuarioPaciente',
+      'https://intraivo.online/api/usuarios/crearUsuarioPaciente',
       datos
 
        //'https://ivo-back.online/api/usuarios/crearUsuarioPaciente', datos

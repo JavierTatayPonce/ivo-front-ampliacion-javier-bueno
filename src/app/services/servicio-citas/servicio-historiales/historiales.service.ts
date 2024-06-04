@@ -11,7 +11,7 @@ export class HistorialesService {
   mostrarHistorialMedico(id_paciente: number): Observable<any> {
     return this.http.get(
       //`https://ivo-back.online/api/historiales/${id_paciente}`
-      `https://intraivo.online/public/api/historiales/${id_paciente}`
+      `https://intraivo.online/api/historiales/${id_paciente}`
      );
   }
 }

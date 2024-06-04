@@ -11,7 +11,7 @@ export class ImagenesService {
   mostrarImagenesDelPaciente(idCita: string): Observable<any> {
     return this.http.get(
       `https://intraivo.online/api/imagenes/mostrarImagenesDelPaciente/${idCita}`
-      //`https://intraivo.online/public/api/imagenes/mostrarImagenesDelPaciente/${idCita}`
+      //`https://intraivo.online/api/imagenes/mostrarImagenesDelPaciente/${idCita}`
     );
   }
   //  `https://ivo-back.online/api/imagenes/mostrarImagenesDelPaciente/${idCita}`
@@ -22,7 +22,7 @@ export class ImagenesService {
       'https://ivo-back.online/api/imagenes/guardar',
       datos
     );*/
-     return this.http.post('https://intraivo.online/public/api/imagenes/guardar',datos);
+     return this.http.post('https://intraivo.online/api/imagenes/guardar',datos);
   }
 
   imagenesSubidas: File[] = [];
@@ -32,19 +32,19 @@ export class ImagenesService {
   }
 
   guardarImagenesIncidencia(formData: FormData): Observable<any> {
-    return this.http.post('https://intraivo.online/public/api/incidencias/guardarImagenesIncidencia', formData);
+    return this.http.post('https://intraivo.online/api/incidencias/guardarImagenesIncidencia', formData);
   }
 
   actualizarImagenesIncidencia(idIncidencia: number, formData: FormData): Observable<any> {
-    return this.http.post(`https://intraivo.online/public/api/incidencias/actualizarImagenesIncidencia/${idIncidencia}`, formData);
+    return this.http.post(`https://intraivo.online/api/incidencias/actualizarImagenesIncidencia/${idIncidencia}`, formData);
   }
 
   obtenerImagenesPorIdIncidencia(id: number): Observable<any> {
-    return this.http.get(`https://intraivo.online/public/api/incidencias/obtenerImagenesPorIdIncidencia/${id}`);
+    return this.http.get(`https://intraivo.online/api/incidencias/obtenerImagenesPorIdIncidencia/${id}`);
   }
 
   eliminarImagen(id:number): Observable<any>{
-    return this.http.delete(`https://intraivo.online/public/api/imagenes/borrar/${id}`);
+    return this.http.delete(`https://intraivo.online/api/imagenes/borrar/${id}`);
   }
 
 }

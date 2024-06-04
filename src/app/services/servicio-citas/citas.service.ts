@@ -12,27 +12,27 @@ export class CitasService {
 
   mostrarCitasDelPaciente(pacienteId: number): Observable<any> {
     return this.http.get(
-     `https://intraivo.online/public/api/citas/mostrarCitasDelPaciente/${pacienteId}`
+     `https://intraivo.online/api/citas/mostrarCitasDelPaciente/${pacienteId}`
       //`https://ivo-back.online/api/citas/mostrarCitasDelPaciente/${pacienteId}`
     );
   }
 
   mostrarDiagnosticoDelPaciente(idCita: string): Observable<any> {
     return this.http.get(
-     `https://intraivo.online/public/api/diagnosticos/mostrarDiagnosticoDelPaciente/${idCita}`
+     `https://intraivo.online/api/diagnosticos/mostrarDiagnosticoDelPaciente/${idCita}`
       //`https://ivo-back.online/api/diagnosticos/mostrarDiagnosticoDelPaciente/${idCita}`
     );
   }
 
   mostrarInformeDelPaciente(idCita: string): Observable<any> {
     return this.http.get(
-      `https://intraivo.online/public/api/informes/mostrarInformeDelPaciente/${idCita}`
+      `https://intraivo.online/api/informes/mostrarInformeDelPaciente/${idCita}`
       //`https://ivo-back.online/api/informes/mostrarInformeDelPaciente/${idCita}`
     );
   }
 
   cancelarCita(numCita: string): Observable<any> {
-    let url = `https://intraivo.online/public/api/citas/cancelarCita/${numCita}`;
+    let url = `https://intraivo.online/api/citas/cancelarCita/${numCita}`;
     //let url = `https://ivo-back.online/api/citas/cancelarCita/${numCita}`;
 
     return this.http.post(url, null); // Proporciona null como el cuerpo
@@ -42,14 +42,14 @@ export class CitasService {
 
   comprobarNumeroDeCita(): Observable<any> {
     return this.http.get(
-      `https://intraivo.online/public/api/citas/comprobarNumCita`
+      `https://intraivo.online/api/citas/comprobarNumCita`
       //`https://ivo-back.online/api/citas/comprobarNumCita`
     );
   }
 
   cumplirCita(numCita: number): Observable<any> {
     //let url = `https://ivo-back.online/api/citas/cumplirCita/${numCita}`;
-      let url = `https://intraivo.online/public/api/citas/cumplirCita/${numCita}`;
+      let url = `https://intraivo.online/api/citas/cumplirCita/${numCita}`;
 
     return this.http.post(url,null);
   }
@@ -69,7 +69,7 @@ export class CitasService {
 
       // Realiza la solicitud HTTP incluyendo los encabezados
       return this.http.get(
-        'https://intraivo.online/public/api/citas/mostrarCitasDelDia',
+        'https://intraivo.online/api/citas/mostrarCitasDelDia',
         //'https://ivo-back.online/api/citas/mostrarCitasDelDia',
         { headers }
       );
@@ -83,7 +83,7 @@ export class CitasService {
 
   updateCita(idCita: string, datosActualizados: any): Observable<any> {
     // Cambia la URL según tu estructura de rutas
-   const url = `https://intraivo.online/public/api/citas/actualizar/${idCita}`;
+   const url = `https://intraivo.online/api/citas/actualizar/${idCita}`;
    //const url = `https://ivo-back.online/api/citas/actualizar/${idCita}`;
 
     return this.http.put(url, datosActualizados);
@@ -92,14 +92,14 @@ export class CitasService {
   // ENDPOINTS DEL MEDICO:
   mostrarCitasMedico(id_medico: number): Observable<any> {
     return this.http.get(
-      `https://intraivo.online/public/api/citas/mostrarCitasMedico/${id_medico}`
+      `https://intraivo.online/api/citas/mostrarCitasMedico/${id_medico}`
       //`https://ivo-back.online/api/citas/mostrarCitasMedico/${id_medico}`
 
     );
   }
 
   crearCitaRadiologica(datosInsertados:any): Observable<any> {
-    const url = `https://intraivo.online/public/api/citas/guardar`;
+    const url = `https://intraivo.online/api/citas/guardar`;
     //const url = `https://ivo-back.online/api/citas/guardar`;
     return this.http.post(url, datosInsertados);
   }

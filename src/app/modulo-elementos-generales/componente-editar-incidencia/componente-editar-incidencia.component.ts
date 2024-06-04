@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { IncidenciasService } from 'src/app/services/servicio-incidencias/incidencias.service'; //IMPORTAMOS EL INCIDENCIAS SERVICE
 import { ImagenesService } from 'src/app/services/servicio-imagenes/imagenes.service'; //IMPORTAMOS EL IMAGENES SERVICE
+
 @Component({
   selector: 'app-componente-editar-incidencia',
   templateUrl: './componente-editar-incidencia.component.html',

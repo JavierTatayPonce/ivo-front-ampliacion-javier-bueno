@@ -11,6 +11,6 @@ export class InformeService {
   guardar(datos: any): Observable<any> {
     // Guardar informes
      //return this.http.post('https://ivo-back.online/api/informes/guardar', datos);
-     return this.http.post( 'https://intraivo.online/public/api/informes/guardar', datos);
+     return this.http.post( 'https://intraivo.online/api/informes/guardar', datos);
   }
 }
